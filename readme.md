@@ -1,6 +1,7 @@
 # Lab 11: Spring for Full-Stack Web Apps 
 
-## There are 3 routes: "/hello", "capitalize/word", "/albums .
+## There are 3 routes: 
+*  "/hello", "capitalize/word", "/albums .
 - "/hello" renders the page to say "Hello World!"
 - "/capitalize/word" takes in a word and capitalizes that when loaded.
 - "/albums" I tshows three album of songs with [title,artist,songCount,length and imageUrl ] instances when loaded.
