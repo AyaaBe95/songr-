@@ -20,7 +20,6 @@ public class SongController {
     @Autowired
     AlbumRepository albumRepository;
 
-
     @GetMapping("/songs")
     public String getOneDirector(Model m) {
         List<Song> songs = songRepository.findAll();
@@ -28,16 +27,12 @@ public class SongController {
         return "songs.html";
     }
 
-//    @GetMapping("/addSongs")
-//    public String getAddSongView(){
-//        return "addSongs.html";
-//    }
 
     @PostMapping("/songs")
     public String addSong(Model m , @RequestParam(value="title")String title,
-                                 @RequestParam(value="length")int length,
-                                 @RequestParam(value="trackNumber")int trackNumber,
-                                 @RequestParam(value="Album")Album album){
+                          @RequestParam(value="length")int length,
+                          @RequestParam(value="trackNumber")int trackNumber,
+                          @RequestParam(value="Album")Album album){
         Song song = new Song(title,length,trackNumber,album);
         songRepository.save(song);
         Album a = albumRepository.findById(album.getId()).get();
@@ -59,16 +54,16 @@ public class SongController {
     }
 
     @PostMapping("/albums/{id}/songs")
-    public String addSong(Model m ,@PathVariable int id,
-                                @RequestParam(value="title")String title,
-                                @RequestParam(value="length")int length,
-                                @RequestParam(value="trackNumber")int trackNumber) {
+    public RedirectView addSong(Model m ,@PathVariable int id,
+                          @RequestParam(value="title")String title,
+                          @RequestParam(value="length")int length,
+                          @RequestParam(value="trackNumber")int trackNumber) {
         Album album = albumRepository.findById(id).get();
         Song song = new Song(title, length, trackNumber,album);
         songRepository.save(song);
         Album a = albumRepository.findById(album.getId()).get();
         m.addAttribute("songs", a.songs);
-        return "songs.html";
+        return new RedirectView("/songs");
     }
 
 

@@ -2,28 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
     <title>Title</title>
 </head>
 <body>
 
+<div id="one">
+
 <p>
-    <span th:text="${album.title}"></span>
+    Album Name: <span th:text="${album.title}"></span>
 </p>
 
 <p>
-    Written by <span th:text="${album.artist}"></span>
+    Written by: <span th:text="${album.artist}"></span>
 </p>
+</div>
 
-
-<div>
+    <div class="two">
     <h3>Add a new Song to the album</h3>
     <form method="POST" th:action="${'/albums/' + album.id + '/songs'}">
         Title:<input name="title" />
+        <br>
+        <br>
         Length:<input name="length" />
+        <br>
+        <br>
         Track Number:<input name="trackNumber" />
+        <br>
+        <br>
         <input type="submit" />
+        <br>
+        <br>
     </form>
 </div>
+
 
 
 </body>
