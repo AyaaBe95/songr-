@@ -9,6 +9,7 @@
 <body>
 <h1>Welcome to the albums list!</h1>
 <div th:each="album : ${albums}">
+    <p>Album Title: <span th:text=${album.id}></span> </p>
     <p>Album Title: <span th:text=${album.title}></span> </p>
     <p>Album Artist: <span th:text=${album.artist}></span></p>
     <p>Songs Count: <span th:text=${album.songCount}></span></p>
