@@ -29,3 +29,30 @@ text-align: center;
 body{
  background-color: #cccccc;
 }
+
+form{
+  width: 30%;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 4px 2px 3px 4px grey;
+    margin-top: 100px;
+    margin:auto;
+    text-align:center;
+}
+
+button{
+ background-color: black;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+  }
+
+  input {
+      color: black;
+      border: solid #eeeeee 1px;
+      padding: 0px 10px;
+  }
