@@ -24,7 +24,16 @@ Testing from terminal:
 
 # Lab 12: Spring and REST 
 
- Album Model has been updated.
- - The Albums can be inserted into database.
- - user can see information about albums.
- - user can add any album into the site.
+ * Album Model has been updated.
+  - The Albums can be inserted into database.
+  - user can see information about albums.
+  - user can add any album into the site.
+
+ * /addAlbums :enable you adding a new Album.
+ * /albums :to see all albums in the site.  
+ * make sure edit  properties file after cloning this respiratory in order to insert the data into database.
+   - spring.datasource.platform=postgres
+   - spring.datasource.url=jdbc:postgresql://localhost:5432/database_name
+   - spring.datasource.username=username
+   - spring.datasource.password=password
+   - spring.jpa.hibernate.ddl-auto=update
