@@ -28,9 +28,11 @@ Testing from terminal:
   - The Albums can be inserted into database.
   - user can see information about albums.
   - user can add any album into the site.
-
+## routes
  * /addAlbums :enable you adding a new Album.
- * /albums :to see all albums in the site.  
+ * /albums :to see all albums in the site.
+
+## properties
  * make sure run the server and create a new database then edit the properties file after cloning this respiratory in order to insert the data into database. 
    - spring.datasource.platform=postgres
    - spring.datasource.url=jdbc:postgresql://localhost:5432/database_name
