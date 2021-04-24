@@ -1,10 +1,8 @@
 package songr.example.songr;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Album {
@@ -19,7 +17,11 @@ public class Album {
     private int length;
     private String imageUrl;
 
-    public Album(String title, String artist, int songCount, int length, String imageUrl) {
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "album")
+    List<Song> songs;
+
+    public  Album(String title, String artist, int songCount, int length, String imageUrl){
+
         this.title = title;
         this.artist = artist;
         this.songCount = songCount;
