@@ -1,50 +1,73 @@
- body #did{
-             display: grid;
-             text-align: center;
-             grid-template-columns: repeat(3, 1fr);
-             margin-left: auto;
-             margin-right: auto;
-             gap: 35px;
-             padding-right: 50px;
-      }
+ body #one{
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+        gap: 35px;
+        padding-right: 50px;
+ }
 
-     .newDiv{
-     margin-left: auto;
-     margin-right: auto;
-     text-align: center;
-     border: 3px solid black;
-     margin-bottom: 35px;
-     width:350px;
-     height: 400px}
+.two{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+border: 3px solid black;
+margin-bottom: 35px;
+width:350px;
+height: 400px}
 
-      #one{
-              display: grid;
-                  text-align: center;
-                  grid-template-columns: repeat(2, 1fr);
-                  margin-left: auto;
-                  margin-right: auto;
-                  gap: 35px;
-                  padding-right: 50px;
-           }
+.twoo{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+border: 3px solid black;
+margin-bottom: 35px;
+width:350px;
+height: 250px}
 
-          .two{
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          border: 3px solid black;
-          margin-bottom: 35px;
-          width:350px;
-          height: 400px}
+img{
+width: 200px;
+height:200px;
+}
 
-     img{
-     width: 200px;
-     height:200px;
-     }
+h1{
+text-align: center;
+}
 
-     h1{
-     text-align: center;
-     }
+body{
+ background-color: #cccccc;
+}
 
-     body{
-      background-color: #cccccc;
-     }
+form{
+  width: 30%;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 4px 2px 3px 4px grey;
+    margin-top: 100px;
+    margin:auto;
+    text-align:center;
+}
+
+button{
+ background-color: black;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+  }
+
+  input {
+      color: black;
+      border: solid #eeeeee 1px;
+      padding: 0px 10px;
+  }
+
+  h2{
+    text-align: center;
+
+
+  }

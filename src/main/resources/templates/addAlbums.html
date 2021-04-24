@@ -7,43 +7,43 @@
     <title>Albums</title>
 </head>
 <body>
-<h1>New Album</h1>
+<h1>Add New Album</h1>
 
-<div >
+<div id="ll">
 
-<form action="/albums" method="post">
+    <form action="/albums" method="post">
+        <br>
+        <br>
+        <label>Title</label>
+        <input type="text" name="title" />
+        <br>
+        <br>
 
-    <br>
-    <br>
-    <label>Title</label>
-    <input type="text" name="title" />
-    <br>
-    <br>
+        <label>Artist</label>
+        <input type="text" name="artist" />
+        <br>
+        <br>
 
-    <label>Artist</label>
-    <input type="text" name="artist" />
-    <br>
-    <br>
+        <label>Songs Count</label>
+        <input type="text" name="songCount" />
+        <br>
+        <br>
 
-    <label>Songs Count</label>
-    <input type="text" name="songCount" />
-    <br>
-    <br>
+        <label>Length</label>
+        <input type="text" name="length" />
+        <br>
+        <br>
 
-    <label>Length</label>
-    <input type="text" name="length" />
-    <br>
-    <br>
+        <label>Image URL</label>
+        <input type="text" name="imageUrl" />
+        <br>
+        <br>
 
-    <label>Image URL</label>
-    <input type="text" name="imageUrl" />
-    <br>
-    <br>
+        <button>Add Album</button>
 
-    <input type="submit" value="Add Album!">
-    <br>
-    <br>
-</form>
+        <br>
+        <br>
+    </form>
 </div>
 
 

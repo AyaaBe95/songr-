@@ -7,19 +7,16 @@
 </head>
 <body>
 
-<div id="one">
 
-<p>
+<h2>
     Album Name: <span th:text="${album.title}"></span>
-</p>
+</h2>
 
-<p>
+<h2>
     Written by: <span th:text="${album.artist}"></span>
-</p>
-</div>
+</h2>
 
-    <div class="two">
-    <h3>Add a new Song to the album</h3>
+    <h2>Add a new Song to the album</h2>
     <form method="POST" th:action="${'/albums/' + album.id + '/songs'}">
         Title:<input name="title" />
         <br>

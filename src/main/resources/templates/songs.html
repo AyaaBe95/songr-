@@ -8,11 +8,14 @@
 <body>
 
 <h1>Welcome to the songs list!</h1>
-<div th:each="song : ${songs}">
-    <p>Songs Title: <span th:text=${song.id}></span> </p>
+<div id="one">
+<div  class="twoo" th:each="song : ${songs}">
+    <p>Songs Id: <span th:text=${song.id}></span> </p>
     <p>Songs Title: <span th:text=${song.title}></span> </p>
     <p>Songs Artist: <span th:text=${song.length}></span></p>
     <p>Songs Count: <span th:text=${song.trackNumber}></span></p>
+
+</div>
 </div>
 </body>
 </html>

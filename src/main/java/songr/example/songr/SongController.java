@@ -23,8 +23,8 @@ public class SongController {
     @GetMapping("/songs")
     public String getOneDirector(Model m) {
         List<Song> songs = songRepository.findAll();
-        m.addAttribute("song", songs);
-        return "songs.html";
+        m.addAttribute("songs", songs);
+        return "songs";
     }
 
 
@@ -37,7 +37,7 @@ public class SongController {
         songRepository.save(song);
         Album a = albumRepository.findById(album.getId()).get();
         m.addAttribute("songs", a.songs);
-        return "songs.html";
+        return "/songs" ;
     }
 
     @GetMapping("/albums/{id}")
@@ -63,7 +63,7 @@ public class SongController {
         songRepository.save(song);
         Album a = albumRepository.findById(album.getId()).get();
         m.addAttribute("songs", a.songs);
-        return new RedirectView("/songs");
+        return  new RedirectView("/songs");
     }
 
 
