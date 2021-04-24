@@ -40,7 +40,7 @@ Testing from terminal:
    - spring.datasource.password=password
    - spring.jpa.hibernate.ddl-auto=update
 
-# Lab 12: Related Resources and Integration Testing
+# Lab 13: Related Resources and Integration Testing
 - Song model contains:title,length,trackNumber and album .
 - The relation between songs and album is many to one.
 - The relation between album and songs is one to many.
